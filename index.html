@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td {
+            padding: 10px;
+        }
+        table{
+            text-align: left;
+            line-height: 22px;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 80%;
+            margin: 20px auto;
+            border: 3px solid #34495e;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        caption{
+            background-color: rgb(50, 50, 66);
+            color: white;
+            line-height: 45px;
+            font-size: 25px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        thead tr {
+            box-shadow: 0px 3px rgba(27, 27, 27, 0.815);   
+        }
+        tbody tr {
+            box-shadow: 0px 2px lightgray;
+        }
+        tbody tr:hover{
+            background-color: rgba(211, 211, 211, 0.548);
+        }
+        .task{
+            width: 40%;
+        }
+        a {
+            text-decoration: none;
+            color: gray;
+        }
+        a:hover {
+            color: blue;
+        }
+        .check{
+            color:rgb(5, 141, 5);
+        }
+        .uncheck{
+            color: red;
+        }
+        #pen:hover{
+            color: blue;
+        }
+        #del:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <table >
+        <caption>
+                Fullstack Live Practical Book
+        </caption> 
+        <thead>
+            <tr>
+                <td><b>#</b></td>
+                <td><b>Name</b></td>
+                <td><b>Link</b></td>
+                <td><b>Status</b></td>
+                <td><b>Tools</b></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="task">Create a Web page including HTML basic skeleton using Offline HTML Editor and Online Sandbox Environment.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical1/">Practical-1</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr> 
+            <tr>
+                <td>2</td>
+                <td class="task">Create a Web page showing basic html structure using character Entities and span tag.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack-Practical2/">Practical-2</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="task"> Live your First Web-Page on Git-Hub.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical3/">Practical-3</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="task">Create a website having list of all practical and their individual practical Page links.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical4/">Practical-4</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="task">Create a Web-Page showing the use of Image-Map in the Web Application.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical5/">Practical-5</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="task">Create the following layout using css layout Properties.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical6/">Practical-6</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil"id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="task">Create a Web Page Layout using div tags.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical7/">Practical-7</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="task">Create a Web Page having Fixed Navigation Bar with the given content.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical8/">Practical-8</a></td>
+                <td class="check">Checked</td>
+                <td> 
+                <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="task">Create a Responsive Web Layout with Responsive Navigation Bar.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical9/">Practical-9</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="task">Create a Responsive Side-Bar Navigation Menu.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical10/">Practical-10</a></td>
+                <td class="check">Checked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="task">Create a Responsive Footer Template.</td>
+                <td><a href="https://mukul-12.github.io/Fullstack_Practical11/">Practical-11</a></td>
+                <td class="uncheck">Unchecked</td>
+                <td>
+                    <i title="Edit" class="fa fa-pencil" id="pen"></i> <i id="del" title="Delete" class="fa fa-trash" id="del"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
